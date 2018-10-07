@@ -1,0 +1,238 @@
+/* IMPORTS */
+@import 'normalize';
+
+*{
+    -webkit-transition: background-color 200ms;
+    -moz-transition: background-color 200ms;
+    -o-transition: background-color 200ms;
+    -ms-transition: background-color 200ms;
+    transition: background-color 200ms;
+
+    &:before,&:after{
+        box-sizing: border-box;
+    }
+}
+
+
+/* VARIABLES */
+// colors
+$white: #fffffa;
+$black: #000103;
+$blue: #036EE2;
+$darkBlue: rgb(0, 37, 77);
+
+@mixin box-shadow{
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: $white;
+    font-size: 18px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9d5454+0,0073ee+100 */
+    background: #9d5454; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #9d5454 0%, #0073ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #9d5454 0%,#0073ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #9d5454 0%,#0073ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d5454', endColorstr='#0073ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    cursor: default;
+}
+
+.settings{
+    position: absolute;
+    right: 0;
+    top: -80px;
+    background-color: $white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $blue;
+        color: $white;
+    }
+}
+
+.dropzone{
+    color: $black;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 8%;
+    height: 20%;
+    border-radius: 8px;
+    background-color: $white;
+    @include box-shadow;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.control-panel{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+
+    .box-wrap{
+        display: flex;
+
+        .control-box:nth-child(2){
+            svg{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .control-box{
+        width: 40px;
+        height: 40px;
+        background-color: $white;
+        color: $black;
+        border-radius: 8px;
+        @include box-shadow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &.active, &:hover{
+            background-color: $blue;
+            color: $white;
+        }
+
+        &.active:hover{
+            background-color: $white;
+            color: $black;
+        }
+
+        &:first-child{
+            margin-right: 20px;
+        }
+
+        &.darkmode{
+            background-color: $black;
+            color: $white;
+
+            &:hover{
+                background-color: $white;
+                color: $black;
+            }
+        }
+    }
+}
+
+#dim{
+    background-color: rgba(0, 0, 0, 0.90);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    background-color: $black;
+    padding: 8px 20px;
+
+    &:hover{
+        background-color: lighten($black, 20%);
+    }
+}
+
+#disclaimer_box{
+    padding-top: 2%;
+    width: 72%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: default;
+}
+
+// DARKMODE
+body.dark{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41056f+0,00162b+65 */
+    background: #41056f; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #41056f 0%, #00162b 65%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #41056f 0%,#00162b 65%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #41056f 0%,#00162b 65%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41056f', endColorstr='#00162b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #191919;
+
+    h1{
+        text-shadow:
+            -1px -1px 0 #555555,  
+             1px -1px 0 #555555,
+            -1px 1px 0 #555555,
+             1px 1px 0 #555555;
+        }
+
+    .settings{
+        background-color: $black;
+        color: $white;
+    
+        &:hover{
+            background-color: $darkBlue;
+            color: $white;
+        }
+    }
+
+    .dropzone{
+        color: $white;
+        background-color: $black;
+    }
+
+    .control-panel{
+    
+        .control-box{
+            background-color: $black;
+            color: $white;
+    
+            &.active, &:hover{
+                background-color: $darkBlue;
+                color: $white;
+            }
+    
+            &.active:hover{
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+}

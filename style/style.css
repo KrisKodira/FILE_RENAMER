@@ -1,0 +1,487 @@
+/* IMPORTS */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+* {
+  -webkit-transition: background-color 200ms;
+  -moz-transition: background-color 200ms;
+  -o-transition: background-color 200ms;
+  -ms-transition: background-color 200ms;
+  transition: background-color 200ms; }
+  *:before, *:after {
+    box-sizing: border-box; }
+
+/* VARIABLES */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fffffa;
+  font-size: 18px;
+  background-color: #fffffa;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9d5454+0,0073ee+100 */
+  background: #9d5454;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #9d5454 0%, #0073ee 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #9d5454 0%, #0073ee 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #9d5454 0%, #0073ee 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d5454', endColorstr='#0073ee',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+     supported by Chrome and Opera */ }
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  cursor: default; }
+
+.settings {
+  position: absolute;
+  right: 0;
+  top: -80px;
+  background-color: #fffffa;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #000103;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  cursor: pointer; }
+  .settings:hover {
+    background-color: #036EE2;
+    color: #fffffa; }
+
+.dropzone {
+  color: #000103;
+  border: none;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 8%;
+  height: 20%;
+  border-radius: 8px;
+  background-color: #fffffa;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  font-weight: 100;
+  font-style: italic; }
+
+.control-panel {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  position: relative; }
+  .control-panel .box-wrap {
+    display: flex; }
+    .control-panel .box-wrap .control-box:nth-child(2) svg {
+      transform: rotate(-45deg); }
+  .control-panel .control-box {
+    width: 40px;
+    height: 40px;
+    background-color: #fffffa;
+    color: #000103;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .control-panel .control-box.active, .control-panel .control-box:hover {
+      background-color: #036EE2;
+      color: #fffffa; }
+    .control-panel .control-box.active:hover {
+      background-color: #fffffa;
+      color: #000103; }
+    .control-panel .control-box:first-child {
+      margin-right: 20px; }
+    .control-panel .control-box.darkmode {
+      background-color: #000103;
+      color: #fffffa; }
+      .control-panel .control-box.darkmode:hover {
+        background-color: #fffffa;
+        color: #000103; }
+
+#dim {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  background-color: #000103;
+  padding: 8px 20px; }
+  button:hover {
+    background-color: #002369; }
+
+#disclaimer_box {
+  padding-top: 2%;
+  width: 72%;
+  margin: 0 auto;
+  text-align: center;
+  cursor: default; }
+
+body.dark {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41056f+0,00162b+65 */
+  background: #41056f;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #41056f 0%, #00162b 65%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #41056f 0%, #00162b 65%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #41056f 0%, #00162b 65%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41056f', endColorstr='#00162b',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: #191919; }
+  body.dark h1 {
+    text-shadow: -1px -1px 0 #555555,   1px -1px 0 #555555, -1px 1px 0 #555555, 1px 1px 0 #555555; }
+  body.dark .settings {
+    background-color: #000103;
+    color: #fffffa; }
+    body.dark .settings:hover {
+      background-color: #00254d;
+      color: #fffffa; }
+  body.dark .dropzone {
+    color: #fffffa;
+    background-color: #000103; }
+  body.dark .control-panel .control-box {
+    background-color: #000103;
+    color: #fffffa; }
+    body.dark .control-panel .control-box.active, body.dark .control-panel .control-box:hover {
+      background-color: #00254d;
+      color: #fffffa; }
+    body.dark .control-panel .control-box.active:hover {
+      background-color: #000103;
+      color: #fffffa; }
+
+/*# sourceMappingURL=style.css.map */

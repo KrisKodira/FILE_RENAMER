@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="vendor/dropzone.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100i,400,900i" rel="stylesheet"> 
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+
+        <script>window.$ = window.jQuery = require('jquery');</script>
+        <script src="vendor/dropzone.js"></script>
+        <script src="js/core.js"></script>
+
+
+        <title>FILE_RENAMER by kris.kodira</title>
+    </head>
+    <body>
+
+        <h1>FILE_RENAMER</h1>
+
+        <div class="control-panel">
+            <div class="box-wrap">
+                <div class="control-box active" title="Don't make filename lowercase" id="to_lowercase">a</div>
+                <div class="control-box active" title="Don't replace all spaces" id="replace_spaces"><i class="fas fa-space-shuttle"></i></div>
+            </div>
+
+            <div class="control-box darkmode" title="Turn on Darkmode" id="toggle_darkmode">
+                <i class="far fa-moon"></i>
+            </div>
+
+            <div class="settings" title="Click here for default settings" id="default_settings">
+                <i class="fas fa-wrench"></i>
+            </div>
+        </div>
+        <div class="dropzone" id="renameDropzone">
+
+        </div>
+
+        <div id="dim" style="display: none">
+            <div id="disclaimer_box">
+                <h2>DISCLAIMER!</h2>
+                <p>
+                    This program should be mostly safe to use but <strong>never</strong> place a file here that you didn't back up or that can't be replaced easily!
+                    Kris.kodira is not liable for any data loss and by using this program you agree to this.<br/>
+                    <br/>
+                    Please report any bugs in the bugtracker.<br/>
+                    <small><b>ALSO DON'T DROP FOLDERS HERE<br/>THIS IS A FILE RENAMER AND FOLDERS WILL BE UNPACKED AND THE FILES INSIDE WILL BE RENAMED</b></small><br/>
+                    <small>(You will not see this anymore after pressing "OK")</small><br/>
+                </p>
+                <button id="read_disclaimer">OK</button>
+            </div>
+        </div>
+
+    </body>
+</html>
